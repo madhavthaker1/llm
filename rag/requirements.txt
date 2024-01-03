@@ -1,0 +1,13 @@
+torch
+datasets
+transformers
+tensorflow
+langchain
+playwright
+html2text
+sentence_transformers
+faiss-cpu
+accelerate==0.21.0
+peft==0.4.0
+bitsandbytes==0.40.2
+trl==0.4.7
