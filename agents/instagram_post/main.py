@@ -12,8 +12,8 @@ agents = MarketingAnalysisAgents()
 
 print("## Welcome to the marketing Crew")
 print('-------------------------------')
-product_website = "https://setactive.co/" # input("What is the product website you want a marketing strategy for?\n")
-product_details = "up and coming athleisure brand" # input("Any extra details about the product and or the post you want?\n")
+product_website = input("What is the product website you want a marketing strategy for?\n")
+product_details = input("Any extra details about the product and or the post you want?\n")
 
 # Create Agents
 product_competitor_agent = agents.product_competitor_agent()
@@ -43,28 +43,6 @@ copy_crew = Crew(
 
 ad_copy = copy_crew.kickoff()
 
-# # Create Crew responsible for Image
-# senior_photographer = agents.senior_photographer_agent()
-# chief_creative_diretor = agents.chief_creative_diretor_agent()
-# # Create Tasks for Image
-# take_photo = tasks.take_photograph_task(senior_photographer, ad_copy, product_website, product_details)
-# approve_photo = tasks.review_photo(chief_creative_diretor, product_website, product_details)
-
-# image_crew = Crew(
-# 	agents=[
-# 		senior_photographer,
-# 		chief_creative_diretor
-# 	],
-# 	tasks=[
-# 		take_photo,
-# 		approve_photo
-# 	],
-# 	verbose=True
-# )
-
-# image = image_crew.kickoff()
-
-# Print results
 print("\n\n########################")
 print("## Here is the result")
 print("########################\n")
